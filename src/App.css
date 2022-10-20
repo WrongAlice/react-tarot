@@ -1,17 +1,24 @@
+body {
+  background-color:rgb(196, 173, 222);
+  box-sizing: border-box;
+  color:white;
+ 
+}
+
 .App {
   text-align: center;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .card-info {
+  border: 2px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.card-info p {
+  margin: 0;
+} */
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +31,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.front {
+/* display: block; */
+width: 300px;
+height: 40vh;
+display: inline-block;
+margin:30px;
+border-radius: 25px;
+ 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
