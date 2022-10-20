@@ -11,11 +11,13 @@ body {
   
 }
 
-/* .card-info {
-  border: 2px solid red;
+.grid {
+  display: flex;
+  justify-content: center;
+  
 }
 
-.card-info p {
+/* .card-info p {
   margin: 0;
 } */
 
@@ -32,7 +34,6 @@ body {
 }
 
 .front {
-/* display: block; */
 width: 300px;
 height: 40vh;
 display: inline-block;
