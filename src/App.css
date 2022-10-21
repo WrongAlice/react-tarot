@@ -14,12 +14,16 @@ body {
 .grid {
   display: flex;
   justify-content: center;
+  padding-top: 90px;
+
   
 }
 
-/* .card-info p {
-  margin: 0;
+/* .card-info {
+color:red;
+
 } */
+
 
 
 .App-header {
@@ -33,15 +37,44 @@ body {
   color: white;
 }
 
-.front {
+
+.card {
+  position: relative;
+ 
+}
+
+.card .front  {
 width: 300px;
 height: 40vh;
 display: inline-block;
 margin:30px;
 border-radius: 25px;
- 
+position: absolute;
+transform: rotateY(90deg);
 
 }
+
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+
+.card .back {
+  width: 300px;
+height: 40vh;
+display: inline-block;
+margin:30px;
+border-radius: 25px;
+
+
+
+}
+
+.desc {
+  visibility:hidden;
+}
+
 
 
 

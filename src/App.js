@@ -3,14 +3,21 @@ import './App.css';
 
 
 const cardImages = [
-  { "src": "/img/The Sun.PNG", "description": "The sun is a powerful force in nature and in our psyche. Follow her and you will succeed"},
-  { "src": "/img/The Moon.PNG" },
-  {  "src": "/img/The Fool.PNG" }
+  { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
+  { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose" }
 ]
 
 
 function App() {
   const [ cards, setCards ] =useState([])
+  // const [ cardOne, setCardOne ] =useState()
+  // const [ cardTwo, setCardTwo ] =useState()
+  // const [ cardThree, setCardThree ] =useState()
+  const [ flipped, setFlipped ]= useState()
+  // const [ noshow, setNoshow ] = ("false")
+  
+
 
   const shuffleCards = () => {
     const shuffledCard = [...cardImages]
@@ -18,20 +25,35 @@ function App() {
     .map((card) => ({ ...card, id:Math.random()}))
     
     setCards(shuffledCard)
+    console.log(shuffledCard)
+  }
+
+
+  const reset = () => {
+    setFlipped()
+    shuffleCards()
+    // setNoshow("true")
   }
 
   return(
     <div className="App">
-      <h1> tarot </h1>
-    <button onClick={shuffleCards}> draw </button>
+      <h1> AI Tarot </h1>
+    <button onClick={reset}> draw </button>
 
    <div className="grid">
-   {cards.slice(0, 1).map(card => (
+   {cards.slice(0, 3).map(card => (
      <div className="card" key={card.id}>
+  <div className={flipped ? "flipped" : "undefined"}>
+ <img className="front" src={card.src} alt="card front" onClick={setFlipped === "true" } />
+ <img className="back" src="img/back.PNG" alt="card back" onClick={setFlipped } />
  <div className="card-info">
-
-     <img className="front" src={card.src} alt="card front" />
+  <div className={flipped ? "" : "desc"}>
+  
+     <p>{card.name}</p>
      <p> {card.description}</p>
+     </div>
+     </div>
+    
 </div>
 </div>
     
