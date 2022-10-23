@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
+import SingleCard from './components/singleCard';
 
 
 const cardImages = [
@@ -11,11 +12,6 @@ const cardImages = [
 
 function App() {
   const [ cards, setCards ] =useState([])
-  // const [ cardOne, setCardOne ] =useState()
-  // const [ cardTwo, setCardTwo ] =useState()
-  // const [ cardThree, setCardThree ] =useState()
-  const [ flipped, setFlipped ]= useState()
-  // const [ noshow, setNoshow ] = ("false")
   
 
 
@@ -30,33 +26,21 @@ function App() {
 
 
   const reset = () => {
-    setFlipped()
     shuffleCards()
-    // setNoshow("true")
+
   }
 
   return(
     <div className="App">
       <h1> AI Tarot </h1>
-    <button onClick={reset}> draw </button>
+      <p> Welcome, to the A.I Tarot - here, youre dreams can become crystal clear,
+        <br/> and your nightmares as well!</p>
+      <button onClick={reset}> choose your fate </button>
+  
 
    <div className="grid">
    {cards.slice(0, 3).map(card => (
-     <div className="card" key={card.id}>
-  <div className={flipped ? "flipped" : "undefined"}>
- <img className="front" src={card.src} alt="card front" onClick={setFlipped === "true" } />
- <img className="back" src="img/back.PNG" alt="card back" onClick={setFlipped } />
- <div className="card-info">
-  <div className={flipped ? "" : "desc"}>
-  
-     <p>{card.name}</p>
-     <p> {card.description}</p>
-     </div>
-     </div>
-    
-</div>
-</div>
-    
+  <SingleCard key={card.id} card={card} />
    ))}
    </div>
    </div>
