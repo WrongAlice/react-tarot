@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Megrim&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 body {
 
   box-sizing: border-box;
@@ -18,25 +21,39 @@ body {
   color:white;
 }
 
+h1 {
+  font-family: 'Megrim', cursive;
+}
+
+p {
+  font-family: 'Major Mono Display', monospace;
+ 
+
+
+}
+
 .grid {
   display: flex;
   justify-content: center;
   padding-top: 90px;
+
 
   
 }
 
 button {
   padding: 10px;
-  border-radius: 5px;
-  background-color:palevioletred;
+  border-radius: 10px;
+  background-color:#F0699F;
+  opacity: 0.9;
   color:white;
   font-size:16px;
+  border: none;
 }
 
 button:hover {
-  color:black;
-  background-color:palevioletred;
+  color:white;
+  background-color:#D96AC3;
   
 
 }
@@ -57,6 +74,7 @@ button:hover {
 
 .card {
   position: relative;
+ 
   
 }
 
@@ -109,12 +127,19 @@ border-radius: 25px;
   .card .front {
     min-width: 70%;
     height: 70%;
+    /* border: 2px solid red; */
     }
 
   .card .back {
     min-width: 70%;
     height: 70%;  
 }
+
+/* p {
+
+margin: 10px;
+ 
+} */
 }
 
 
@@ -122,6 +147,7 @@ border-radius: 25px;
   .card .front {
     min-width: 70%;
     height: 50%;
+    /* margin-bottom: 70px; */
     
   }
   
@@ -131,24 +157,16 @@ border-radius: 25px;
     height: 50%;
  
   
-}
 }
 
-/* @media only screen and (max-width: 437px) {
-  .card .front {
-    min-width: 70%;
-    height: 50%;
-    
-  }
-  
-  
-  .card .back {
-    min-width: 70%;
-    height: 60%;
- 
-  
+/* p {
+  border: 2px solid red;
+  margin: 10px;
+
+ } */
 }
-} */
+
+
 
 
 

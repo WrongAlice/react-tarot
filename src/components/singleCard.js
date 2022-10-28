@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import back from '../public/img/back.png'
+// import './singleCard.css'
 
 
 
@@ -13,11 +13,14 @@ export default function SingleCard({card}) {
        <img className="back" src="/img/back.png" alt="card back" onClick={setFlipped } />
        <div className="card-info">
         <div className={flipped ? "" : "desc"}>
-        
+        <div className='card-descriptions'>
            <p>{card.name}</p>
            <p> {card.description}</p>
            </div>
+       
            </div>
+           </div>
+          
           
       </div>
       </div>
