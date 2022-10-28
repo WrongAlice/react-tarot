@@ -27,16 +27,12 @@ h1 {
 
 p {
   font-family: 'Major Mono Display', monospace;
- 
-
-
+  margin-top: 10px;
 }
-
 .grid {
   display: flex;
   justify-content: center;
   padding-top: 90px;
-
 
   
 }
@@ -74,7 +70,6 @@ button:hover {
 
 .card {
   position: relative;
- 
   
 }
 
@@ -125,45 +120,47 @@ border-radius: 25px;
 
 @media only screen and (max-width: 880px) {
   .card .front {
-    min-width: 70%;
-    height: 70%;
-    /* border: 2px solid red; */
+   width: 27vw;
+    height: 25vh;
+    margin-left:10px;
+    margin-right:10px;
+ 
     }
 
   .card .back {
-    min-width: 70%;
-    height: 70%;  
+    width: 27vw;
+    height: 25vh;  
+    margin-left:10px;
+    margin-right:10px;
 }
 
-/* p {
 
-margin: 10px;
- 
-} */
 }
 
 
 @media only screen and (max-width: 442px) {
   .card .front {
-    min-width: 70%;
-    height: 50%;
-    /* margin-bottom: 70px; */
+    width: 27vw;
+    height: 25vh;
+ margin-left:10px;
+ margin-right:10px;
+
     
   }
   
   
   .card .back {
-    min-width: 70%;
-    height: 50%;
+    width: 27vw;
+    height: 25vh;
+    margin-left:10px;
+    margin-right:10px;
+ 
+    
  
   
 }
 
-/* p {
-  border: 2px solid red;
-  margin: 10px;
 
- } */
 }
 
 

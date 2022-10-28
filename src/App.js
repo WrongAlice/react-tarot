@@ -8,7 +8,7 @@ import star from './assets/star.svg'
 const cardImages = [
   { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose " }
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose all of your earthley delights " }
 ]
 
 
