@@ -1,5 +1,5 @@
 body {
-  /* background-color:rgb(196, 173, 222); */
+
   box-sizing: border-box;
   color:white;
  
@@ -8,12 +8,14 @@ body {
 .App {
   text-align: center;
   height: 900px;
-  background: #F3A4E6;
+  background: #E9BDDF;
+  color: black;
  
 }
 
 .App.dark {
   background: #A36D9A;
+  color:white;
 }
 
 .grid {
@@ -60,17 +62,17 @@ color:red;
 
 .card {
   position: relative;
- 
+  
 }
 
 .card .front  {
-width: 300px;
+  width: 70%;
 height: 40vh;
 display: inline-block;
-margin:30px;
 border-radius: 25px;
 position: absolute;
 transform: rotateY(90deg);
+
 
 }
 
@@ -81,11 +83,11 @@ transform: rotateY(90deg);
 
 
 .card .back {
-  width: 300px;
+  width: 70%;
 height: 40vh;
 display: inline-block;
-margin:30px;
 border-radius: 25px;
+/* border: 2px solid red; */
 
 
 
@@ -105,6 +107,54 @@ border-radius: 25px;
   height: 24px;
   cursor: pointer;
 }
+
+
+
+@media only screen and (max-width: 880px) {
+  .card .front {
+    min-width: 70%;
+    height: 70%;
+    }
+
+  .card .back {
+    min-width: 70%;
+    height: 60%;  
+}
+}
+
+
+@media only screen and (max-width: 442px) {
+  .card .front {
+    min-width: 70%;
+    height: 50%;
+    
+  }
+  
+  
+  .card .back {
+    min-width: 70%;
+    height: 60%;
+ 
+  
+}
+}
+
+/* @media only screen and (max-width: 437px) {
+  .card .front {
+    min-width: 70%;
+    height: 50%;
+    
+  }
+  
+  
+  .card .back {
+    min-width: 70%;
+    height: 60%;
+ 
+  
+}
+} */
+
 
 
 
