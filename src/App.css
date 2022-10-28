@@ -27,7 +27,7 @@ h1 {
 
 p {
   font-family: 'Major Mono Display', monospace;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .grid {
   display: flex;
@@ -120,18 +120,14 @@ border-radius: 25px;
 
 @media only screen and (max-width: 880px) {
   .card .front {
-   width: 27vw;
-    height: 25vh;
-    margin-left:10px;
-    margin-right:10px;
- 
+    min-width: 70%;
+    height: 70%;
+    /* border: 2px solid red; */
     }
 
   .card .back {
-    width: 27vw;
-    height: 25vh;  
-    margin-left:10px;
-    margin-right:10px;
+    min-width: 70%;
+    height: 70%;  
 }
 
 
@@ -140,22 +136,16 @@ border-radius: 25px;
 
 @media only screen and (max-width: 442px) {
   .card .front {
-    width: 27vw;
-    height: 25vh;
- margin-left:10px;
- margin-right:10px;
+    min-width: 70%;
+    height: 50%;
 
     
   }
   
   
   .card .back {
-    width: 27vw;
-    height: 25vh;
-    margin-left:10px;
-    margin-right:10px;
- 
-    
+    min-width: 70%;
+    height: 50%;
  
   
 }
