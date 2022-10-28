@@ -15,7 +15,7 @@ export default function SingleCard({card}) {
         <div className={flipped ? "" : "desc"}>
         <div className='card-descriptions'>
            <p>{card.name}</p>
-           <p> {card.description}</p>
+           {/* <p> {card.description}</p> */}
            </div>
        
            </div>
