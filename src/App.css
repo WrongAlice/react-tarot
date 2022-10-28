@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(196, 173, 222);
+  /* background-color:rgb(196, 173, 222); */
   box-sizing: border-box;
   color:white;
  
@@ -7,8 +7,13 @@ body {
 
 .App {
   text-align: center;
+  height: 900px;
+  background: #F3A4E6;
+ 
+}
 
-  
+.App.dark {
+  background: #A36D9A;
 }
 
 .grid {
@@ -90,6 +95,16 @@ border-radius: 25px;
   visibility:hidden;
 }
 
+.mode-toggle {
+  margin-right: 90%;
+  padding: 20px;
+}
+
+.mode-toggle img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 
 
 

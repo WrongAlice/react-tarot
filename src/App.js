@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './App.css';
 import SingleCard from './components/singleCard';
+import { useTheme } from './hooks/useTheme'
+import star from './assets/star.svg'
 
 
 const cardImages = [
@@ -12,13 +14,15 @@ const cardImages = [
 
 function App() {
   const [ cards, setCards ] =useState([])
+  const { color, changeColor, changeMode, mode } = useTheme()
   
 
 
   const shuffleCards = () => {
     const shuffledCard = [...cardImages]
     .sort(() => Math.random() -0.5)
-    .map((card) => ({ ...card, id:Math.random()}))
+    .map((card) => 
+    ({ ...card, id:Math.random()}))
     
     setCards(shuffledCard)
     console.log(shuffledCard)
@@ -30,17 +34,31 @@ function App() {
 
   }
 
+  const toggleMode= () => {
+ changeMode(mode === 'dark' ?  'light' : 'dark')
+}
+console.log( mode)
+
   return(
-    <div className="App">
-      <h1> AI Tarot </h1>
-      <p> Welcome, to the A.I Tarot - here, youre dreams can become crystal clear,
+    <div className={ `App ${mode}`}>
+      <div className="mode-toggle">
+          <img
+          onClick={toggleMode}
+          src={ star } 
+          alt="dark/light mode icon"
+          style={{ filter: mode === 'dark' ? 'invert(100%)' : 'invert(20%)'}}
+          />
+ </div>
+      <h1 onClick={() => changeColor('pink')}> AI Tarot </h1>
+      <p> Welcome, to the A.I Tarot - here, your dreams can become crystal clear,
         <br/> and your nightmares as well!</p>
+        
       <button onClick={reset}> choose your fate </button>
   
 
    <div className="grid">
    {cards.slice(0, 3).map(card => (
-  <SingleCard key={card.id} card={card} />
+  <SingleCard key={card.id} card={card}  />
    ))}
    </div>
    </div>
