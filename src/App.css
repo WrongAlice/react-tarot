@@ -121,7 +121,7 @@ border-radius: 25px;
 @media only screen and (max-width: 880px) {
   .card .front {
     min-width: 70%;
-    height: 79%;
+    height: 60%;
     /* border: 2px solid red; */
     }
 
@@ -137,7 +137,7 @@ border-radius: 25px;
 @media only screen and (max-width: 442px) {
   .card .front {
     min-width: 70%;
-    height: 70%;
+    height: 50%;
 
     
   }
