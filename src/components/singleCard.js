@@ -16,6 +16,7 @@ export default function SingleCard({card, desc}) {
     }
     console.log(modalOpen)
     return (
+       
         <div className="card">
         <div className={flipped ? "flipped" : "undefined"}>
        <img className="front" src={card.src} alt="card front" onClick={setFlipped === "true" } />
@@ -25,10 +26,11 @@ export default function SingleCard({card, desc}) {
         <div className={flipped ? "" : "desc"}>
         <div className='card-descriptions'>
            <p>{card.name}</p>
-           <button onClick={showDescription}> more</button>
+           <button onClick={showDescription}> elaborate </button>
            <div className={ modalOpen === false ? "close" : "modal"}>
            <p>{showDesc} </p>
            </div>
+       
           
            
           

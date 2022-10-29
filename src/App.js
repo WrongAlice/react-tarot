@@ -8,13 +8,22 @@ import star from './assets/star.svg'
 const cardImages = [
   { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose"}
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose."}
+]
+
+const cardImagesb = [
+  { "src": "/img/nice1.PNG", "name": "new", "description": "You will win"},
+  { "src": "/img/nice2.PNG", "name": "new", "description": "You will see the light" },
+  {  "src": "/img/nice3.PNG", "name": "new", "description": "You will lose."}
 ]
 
 
 function App() {
   const [ cards, setCards ] =useState([])
-  const { color, changeColor, changeMode, mode } = useTheme()
+  const [ s, setS ] = useState([])
+  const { ctype, changeCards, changeMode, mode } = useTheme()
+
+  //ctype is grid1 and mode is dream
   
 
 
@@ -25,19 +34,41 @@ function App() {
     ({ ...card, id:Math.random()}))
     
     setCards(shuffledCard)
+   
     console.log(shuffledCard)
+  }
+
+  const shuffleCards2 = () => {
+    const shuffledCard2 = [...cardImagesb]
+    .sort(() => Math.random() -0.5)
+    .map((card) => 
+    ({ ...card, id:Math.random()}))
+    
+    setS(shuffledCard2)
+   
+    console.log(shuffledCard2)
   }
 
 
   const reset = () => {
     shuffleCards()
-
+    shuffleCards2()
+   
   }
 
+  //i have two separate arrays as of here
+
+  //toggles my reducer state
+
   const toggleMode= () => {
- changeMode(mode === 'nightmare' ?  'dream' : 'nightmare')
+ changeMode( mode === 'nightmare' ?  'dream' : 'nightmare')
+ changeCards( ctype === 'grid1' ?  'grid2' : 'grid1')
 }
+
+
+
 console.log( mode)
+console.log(ctype)
 
   return(
     <div className={ `App ${mode}`}>
@@ -46,21 +77,28 @@ console.log( mode)
           onClick={toggleMode}
           src={ star } 
           alt="dark/light mode icon"
-          style={{ filter: mode === 'dark' ? 'invert(100%)' : 'invert(20%)'}}
+          style={{ filter: mode === 'nightmare' ? 'invert(100%)' : 'invert(20%)'}}
           />
  </div>
       <h1> AI Tarot </h1>
       <p> Welcome, to the A.I Tarot - here, your dreams can become crystal clear,
         <br/> and your nightmares as well!</p>
         
-      <button onClick={reset}> choose your fate </button>
+      <button onClick={reset}> make a choice </button>
       <p> You are currently in : { mode } mode</p>
   
-
-   <div className="grid">
+      <div className={ ctype === 'grid1' ? 'gridd2' : 'gridd1'}>
+   <div className="gridd1">
    {cards.slice(0, 3).map(card => (
   <SingleCard key={card.id} card={card} />
    ))}
+   </div>
+
+   <div className="gridd2">
+   {s.slice(0, 3).map(card => (
+  <SingleCard key={card.id} card={card} />
+   ))}
+   </div>
    </div>
    </div>
   )}
