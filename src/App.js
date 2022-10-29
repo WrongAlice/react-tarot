@@ -8,7 +8,7 @@ import star from './assets/star.svg'
 const cardImages = [
   { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose " }
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose youre  asupid poopei pants skjfkjnf" }
 ]
 
 
@@ -58,7 +58,7 @@ console.log( mode)
 
    <div className="grid">
    {cards.slice(0, 3).map(card => (
-  <SingleCard key={card.id} card={card}  />
+  <SingleCard key={card.id} card={card} />
    ))}
    </div>
    </div>

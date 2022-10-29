@@ -4,7 +4,7 @@
 body {
 
   box-sizing: border-box;
-  color:white;
+  background: #E9BDDF;
  
 }
 
@@ -74,7 +74,7 @@ button:hover {
 }
 
 .card .front  {
-  width: 70%;
+  width: 75%;
 height: 40vh;
 display: inline-block;
 border-radius: 25px;
@@ -91,7 +91,7 @@ transform: rotateY(90deg);
 
 
 .card .back {
-  width: 70%;
+  width: 75%;
 height: 40vh;
 display: inline-block;
 border-radius: 25px;
@@ -145,7 +145,7 @@ border-radius: 25px;
   
   .card .back {
     min-width: 70%;
-    height: 70%;
+    height: 80%;
  
   
 }
