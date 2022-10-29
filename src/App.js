@@ -35,7 +35,7 @@ function App() {
   }
 
   const toggleMode= () => {
- changeMode(mode === 'dark' ?  'light' : 'dark')
+ changeMode(mode === 'nightmare' ?  'dream' : 'nightmare')
 }
 console.log( mode)
 
@@ -54,6 +54,7 @@ console.log( mode)
         <br/> and your nightmares as well!</p>
         
       <button onClick={reset}> choose your fate </button>
+      <p> You are currently in : { mode } mode</p>
   
 
    <div className="grid">

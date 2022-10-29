@@ -9,6 +9,7 @@ body {
 }
 
 .App {
+  box-sizing: border-box;
   text-align: center;
   height: 900px;
   background: #E9BDDF;
@@ -16,7 +17,7 @@ body {
  
 }
 
-.App.dark {
+.App.nightmare {
   background: #A36D9A;
   color:white;
 }
@@ -121,13 +122,13 @@ border-radius: 25px;
 @media only screen and (max-width: 880px) {
   .card .front {
     min-width: 70%;
-    height: 60%;
+    height: 70%;
     /* border: 2px solid red; */
     }
 
   .card .back {
     min-width: 70%;
-    height: 70%;  
+    height: 50%;  
 }
 
 
