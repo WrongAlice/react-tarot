@@ -10,10 +10,9 @@ const cardImages = [
   { "src": "/img/themoon.PNG", "name": "The Moon", "description": "You will see the light" },
   {  "src": "/img/thefool.PNG", "name": "The Fool", "description": "You will never lose, keep being a fool."},
   {  "src": "/img/theempress.PNG", "name": "The Empress", "description": "You are magic."}
-]
+];
 
 const cardImagesb = [
-  { "src": "/img/nice3.PNG", "name": "new", "description": "You will die"},
   { "src": "/img/nice2.PNG", "name": "new", "description": "You will never see the light" },
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light, but too late" },
   {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will be embarrased."}
@@ -21,9 +20,9 @@ const cardImagesb = [
 
 
 function App() {
-  const [ cards, setCards ] =useState([])
-  const [ s, setS ] = useState([])
-  const { changeMode, mode, ctype, changeCards } = useTheme()
+  const [ cards, setCards ] =useState([]);
+  const [ s, setS ] = useState([]);
+  const { changeMode, mode, ctype, changeCards } = useTheme();
 
 
   
@@ -37,7 +36,7 @@ function App() {
     
     setCards(shuffledCard)
    
-    console.log(shuffledCard)
+
   }
   
 
@@ -49,7 +48,7 @@ function App() {
     
     setS(shuffledCard2)
    
-    console.log(shuffledCard2)
+  
   }
 
 
@@ -70,9 +69,6 @@ function App() {
 }
 
 
-
-console.log( mode)
-console.log(ctype)
 
   return(
     <div className={ `App ${mode}`}>
