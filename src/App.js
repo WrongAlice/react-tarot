@@ -83,11 +83,11 @@ console.log( mode)
           />
  </div>
       <h1> AI Tarot </h1>
-      <p> Welcome, to the A.I Tarot - here, your dreams can become crystal clear,
-        <br/> and your nightmares as well!</p>
+      <h3> Welcome, to the A.I Tarot - here, your dreams can become crystal clear,
+        <br/> and your nightmares as well!</h3>
         
       <button onClick={reset}> make a choice </button>
-      <p> You are currently in : { mode } mode</p>
+      <h4> You are currently in : { mode } mode</h4>
   
       <div className={ mode === 'nightmare' ? 'grid1' : ''}>
    <div className="grid1">

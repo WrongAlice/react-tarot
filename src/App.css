@@ -22,13 +22,15 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+h1, h3, h4 {
   font-family: 'Megrim', cursive;
+  margin: 15px;
 }
 
 p {
   font-family: 'Major Mono Display', monospace;
-  /* margin-top: 10px; */
+  
+  
 }
 
 .grid1 {
