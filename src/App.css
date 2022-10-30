@@ -41,20 +41,20 @@ p {
  
 }
 
-/* .grid1.nightmare{
-  visibility: hidden;
-} */
+.grid1.night{
+  visibility:hidden;
+}
 
-/* .grid2{
+.grid2{
   display: flex;
   justify-content: center;
   padding-top: 90px;
   
-} */
+}
 
-/* .grid2 {
+.grid2.dre{
   visibility: hidden;
-} */
+}
 
 
 

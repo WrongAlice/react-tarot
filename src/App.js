@@ -8,23 +8,22 @@ import star from './assets/star.svg'
 const cardImages = [
   { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will lose."}
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will never lose."}
 ]
 
-// const cardImagesb = [
-//   { "src": "/img/nice1.PNG", "name": "new", "description": "You will win"},
-//   { "src": "/img/nice2.PNG", "name": "new", "description": "You will see the light" },
-//   {  "src": "/img/nice3.PNG", "name": "new", "description": "You will lose."}
-// ]
+const cardImagesb = [
+  { "src": "/img/nice1.PNG", "name": "new", "description": "You will die"},
+  { "src": "/img/nice2.PNG", "name": "new", "description": "You will never see the light" },
+  {  "src": "/img/nice3.PNG", "name": "new", "description": "You will lose."}
+]
 
 
 function App() {
   const [ cards, setCards ] =useState([])
-  // const [ s, setS ] = useState([])
-  // const [ grid, setGrid] = useState([])
-  const { changeMode, mode } = useTheme()
+  const [ s, setS ] = useState([])
+  const { changeMode, mode, ctype, changeCards } = useTheme()
 
-  //ctype is grid1 and mode is dream
+
   
 
 
@@ -38,22 +37,23 @@ function App() {
    
     console.log(shuffledCard)
   }
+  
 
-  // const shuffleCards2 = () => {
-  //   const shuffledCard2 = [...cardImagesb]
-  //   .sort(() => Math.random() -0.5)
-  //   .map((card) => 
-  //   ({ ...card, id:Math.random()}))
+  const shuffleCards2 = () => {
+    const shuffledCard2 = [...cardImagesb]
+    .sort(() => Math.random() -0.5)
+    .map((card) => 
+    ({ ...card, id:Math.random()}))
     
-  //   setS(shuffledCard2)
+    setS(shuffledCard2)
    
-  //   console.log(shuffledCard2)
-  // }
+    console.log(shuffledCard2)
+  }
 
 
   const reset = () => {
     shuffleCards()
-    // shuffleCards2()
+    shuffleCards2()
    
   }
 
@@ -64,13 +64,13 @@ function App() {
   const toggleMode= () => {
  changeMode( mode === 'nightmare' ?  'dream' : 'nightmare')
  
-//  setGrid( mode === 'nightmare' ? 'grid1' : 'grid2')
+ changeCards( ctype === 'dre' ? 'night' : 'dre')
 }
 
 
 
 console.log( mode)
-// console.log(ctype)
+console.log(ctype)
 
   return(
     <div className={ `App ${mode}`}>
@@ -89,20 +89,23 @@ console.log( mode)
       <button onClick={reset}> make a choice </button>
       <h4> You are currently in : { mode } mode</h4>
   
-      <div className={ mode === 'nightmare' ? 'grid1' : ''}>
+    { ctype === 'dre' && (
    <div className="grid1">
    {cards.slice(0, 3).map(card => (
   <SingleCard key={card.id} card={card} />
    ))}
    </div>
+   )}
 
-   {/* <div className="grid2">
+{ ctype === 'night' && (
+   <div className="grid2">
    {s.slice(0, 3).map(card => (
   <SingleCard key={card.id} card={card} />
    ))}
-   </div> */}
    </div>
+   )}
    </div>
+  
   )}
 
 
