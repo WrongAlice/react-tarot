@@ -32,17 +32,17 @@ p {
   font-family: 'Major Mono Display', monospace;
   
   
+  
 }
 
 .grid1 {
-/* border:2px solid red; */
   display: flex;
   justify-content: center;
   padding-top: 90px;
  
 }
 
-.grid1.night{
+.grid1.night {
   visibility:hidden;
 }
 
@@ -78,7 +78,6 @@ button {
 button:hover {
   color:black;
   background-color:#D96AC3;
-  
 
 }
 
@@ -102,7 +101,7 @@ button:hover {
 }
 
 .card .front  {
-  width: 75%;
+  width: 85%;
 height: 40vh;
 display: inline-block;
 border-radius: 25px;
@@ -119,7 +118,7 @@ transform: rotateY(90deg);
 
 
 .card .back {
-  width: 75%;
+  width: 85%;
 height: 40vh;
 display: inline-block;
 border-radius: 25px;
