@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 body {
-
   box-sizing: border-box;
   background: #E9BDDF;
  
@@ -20,6 +19,7 @@ body {
 .App.nightmare {
   background: #A36D9A;
   color:white;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -30,29 +30,29 @@ p {
   font-family: 'Major Mono Display', monospace;
   /* margin-top: 10px; */
 }
-.gridd1 {
-  visibility: hidden;
+
+.grid1 {
+/* border:2px solid red; */
   display: flex;
   justify-content: center;
   padding-top: 90px;
  
 }
 
-.gridd1.nightmare{
+/* .grid1.nightmare{
   visibility: hidden;
-}
+} */
 
-.gridd2  {
-
+/* .grid2{
   display: flex;
   justify-content: center;
   padding-top: 90px;
   
-}
+} */
 
-.grid2.dream{
+/* .grid2 {
   visibility: hidden;
-}
+} */
 
 
 
