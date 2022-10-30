@@ -6,16 +6,17 @@ import star from './assets/star.svg'
 
 
 const cardImages = [
-  { "src": "/img/The Sun.PNG", "name": "The Sun", "description": "You will win"},
-  { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will never lose."}
+  { "src": "/img/thesun.PNG", "name": "The Sun", "description": "You will win"},
+  { "src": "/img/themoon.PNG", "name": "The Moon", "description": "You will see the light" },
+  {  "src": "/img/thefool.PNG", "name": "The Fool", "description": "You will never lose, keep being a fool."},
+  {  "src": "/img/theempress.PNG", "name": "The Empress", "description": "You are magic."}
 ]
 
 const cardImagesb = [
-  { "src": "/img/nice1.PNG", "name": "new", "description": "You will die"},
+  { "src": "/img/nice3.PNG", "name": "new", "description": "You will die"},
   { "src": "/img/nice2.PNG", "name": "new", "description": "You will never see the light" },
-  { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
-  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will never lose."}
+  { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light, but too late" },
+  {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will be embarrased."}
 ]
 
 
