@@ -14,7 +14,6 @@ const cardImages = [
 const cardImagesb = [
   { "src": "/img/nice1.PNG", "name": "new", "description": "You will die"},
   { "src": "/img/nice2.PNG", "name": "new", "description": "You will never see the light" },
-  // {  "src": "/img/nice3.PNG", "name": "new", "description": "You willlose."},
   { "src": "/img/The Moon.PNG", "name": "The Moon", "description": "You will see the light" },
   {  "src": "/img/The Fool.PNG", "name": "The Fool", "description": "You will never lose."}
 ]
