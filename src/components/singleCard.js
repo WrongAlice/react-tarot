@@ -28,9 +28,9 @@ export default function SingleCard({card, desc}) {
            <p>{card.name}</p>
            <button onClick={showDescription}> elaborate </button>
            <div className={ modalOpen === false ? "close" : "modal"}>
-        
+       
            <p>{showDesc} </p>
-    
+  
            </div>
        
           

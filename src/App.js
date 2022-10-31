@@ -9,7 +9,7 @@ const cardImages = [
   { "src": "/img/thesun.PNG", "name": "The Sun", "description": "You will win"},
   { "src": "/img/themoon.PNG", "name": "The Moon", "description": "You will see the light" },
   {  "src": "/img/thefool.PNG", "name": "The Fool", "description": "You will never lose, keep being a fool."},
-  {  "src": "/img/theempress.PNG", "name": "The Empress", "description": "You are magic."}
+  {  "src": "/img/theempress.PNG", "name": "Empress", "description": "You are magic."}
 ];
 
 const cardImagesb = [

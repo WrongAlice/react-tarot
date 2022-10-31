@@ -30,9 +30,7 @@ h1, h3, h4 {
 
 p {
   font-family: 'Major Mono Display', monospace;
-  
-  
-  
+    
 }
 
 .grid1 {
@@ -147,13 +145,13 @@ border-radius: 25px;
 
 @media only screen and (max-width: 880px) {
   .card .front {
-    min-width: 70%;
+    min-width: 80%;
     height: 70%;
     /* border: 2px solid red; */
     }
 
   .card .back {
-    min-width: 70%;
+    min-width: 80%;
     height: 50%;  
 }
 
@@ -163,16 +161,16 @@ border-radius: 25px;
 
 @media only screen and (max-width: 442px) {
   .card .front {
-    min-width: 70%;
-    height: 50%;
+    min-width: 80%;
+    height: 60%;
 
     
   }
   
   
   .card .back {
-    min-width: 70%;
-    height: 80%;
+    min-width: 80%;
+    height: 50%;
  
   
 }
