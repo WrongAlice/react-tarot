@@ -197,6 +197,25 @@ border-radius: 25px;
 
 }
 
+@media only screen and (max-width: 410px) {
+  .card .front {
+    min-width: 80%;
+    height: 57%;
+
+    
+  }
+  
+  
+  .card .back {
+    min-width: 80%;
+    height: 57%;
+ 
+  
+}
+
+
+}
+
 
 
 
