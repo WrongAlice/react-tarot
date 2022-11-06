@@ -6,37 +6,50 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
-  width: 100px;
- 
+  width: 125px;
+  background-color: white;
+  border-radius:15px;
+
 }
 
-/* .close {
+.modal .close-btn {
+  color: purple;
+  background-color:white;
 
-
-} */
-
-.modal-header {
-  background: lightblue;
-  opacity: 0.4;
-  color:#fff;
-  padding: 5px;
 }
+
+.modal.closed {
+  display: hidden;
+}
+
 
 .modal p {
-  color: black;
-  background-color:#fff;
-  border-radius:5px;
+  color:purple;
   max-width: 100%;
- /* padding: 10px;  //why tho? */
+ 
   
 }
 
 
-@media only screen and (max-width: 442px) {
-  .modal {
-    width: 50px;
-  }
+  @media only screen and (max-width: 442px) {
+    .modal {
+      width: 120px;
+  
+    }
+  
+      
+    }
 
+    @media only screen and (max-width: 342px) {
+      .modal {
+        width: 120px;
+     
+      }
     
-  }
+        
+      }
+    
+  
+
+ 
   

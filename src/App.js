@@ -22,7 +22,8 @@ const cardImagesb = [
 function App() {
   const [ cards, setCards ] =useState([]);
   const [ s, setS ] = useState([]);
-  const { changeMode, mode, ctype, changeCards } = useTheme();
+  const { changeMode, mode, ctype, changeCards, } = useTheme();
+  
 
 
   
@@ -58,13 +59,9 @@ function App() {
    
   }
 
-  //i have two separate arrays as of here
-
-  //toggles my reducer state
 
   const toggleMode= () => {
  changeMode( mode === 'nightmare' ?  'dream' : 'nightmare')
- 
  changeCards( ctype === 'dre' ? 'night' : 'dre')
 }
 
@@ -90,7 +87,7 @@ function App() {
     { ctype === 'dre' && (
    <div className="grid1">
    {cards.slice(0, 3).map(card => (
-  <SingleCard key={card.id} card={card} />
+  <SingleCard key={card.id} card={card}  />
    ))}
    </div>
    )}

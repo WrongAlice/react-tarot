@@ -11,6 +11,8 @@ const themeReducer = ( state, action ) => {
              return { ...state, ctype: action.payload }
             case 'CHANGE_MODE' :
                 return { ...state, mode: action.payload }
+                case 'CHANGE_BACK' :
+                return { ...state, mode: action.payload }
             default:
                 return state
 
@@ -21,7 +23,8 @@ const themeReducer = ( state, action ) => {
 export function ThemeProvider({ children }) {
   const [ state, dispatch ] =  useReducer(themeReducer, {
         ctype: 'dre',
-        mode: 'dream'
+        mode: 'dream',
+        back: 'back1'
     })
 
     const changeCards = (ctype) => {
@@ -31,8 +34,12 @@ export function ThemeProvider({ children }) {
     const changeMode = (mode) => {
         dispatch({ type: 'CHANGE_MODE', payload: mode})
     }
+
+    const changeBack = (back) => {
+        dispatch({ type: 'CHANGE_BACK', payload: back})
+    }
     return (
-        <ThemeContext.Provider  value={{ ...state, changeMode,changeCards }}> 
+        <ThemeContext.Provider  value={{ ...state, changeMode,changeCards, changeBack }}> 
         { children }
         </ThemeContext.Provider>
 
