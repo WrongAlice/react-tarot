@@ -118,10 +118,6 @@ transform: rotateY(90deg);
 height: 40vh;
 display: inline-block;
 border-radius: 25px;
-/* border: 2px solid red; */
-
-
-
 }
 
 .desc {
@@ -195,10 +191,20 @@ border-radius: 25px;
 
 }
 
+@media only screen and (max-width: 465px) {
+  .card .front {
+    min-width: 80%;
+    height: 63%;
+
+    
+  }
+}
+
+
 @media only screen and (max-width: 410px) {
   .card .front {
     min-width: 80%;
-    height: 57%;
+    height: 56%;
 
     
   }
