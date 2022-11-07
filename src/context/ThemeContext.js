@@ -24,7 +24,7 @@ export function ThemeProvider({ children }) {
   const [ state, dispatch ] =  useReducer(themeReducer, {
         ctype: 'dre',
         mode: 'dream',
-        back: 'back1'
+        back: '1'
     })
 
     const changeCards = (ctype) => {
